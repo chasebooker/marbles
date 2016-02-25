@@ -4,6 +4,10 @@ Marble database initiated on February 24, 2106 for
 the Networks and Transactions course at the
 Yale School of Art.
 
+## To start meteor:
+
+Open the terminal and type `meteor --port $IP:$PORT`.
+
 ## To create a new repository:
 
 * Create a public repositoriy in GitHub. Don't initiate it with a readme.
@@ -19,3 +23,10 @@ Yale School of Art.
     
 Change the remote URL based on what it says in your GitHub repo. The first two
 steps are only necessary when starting a new project.
+
+Every time you make a change, use these four commands:
+
+    git status
+    git add -A
+    git commit -m "Commit message"
+    git push
