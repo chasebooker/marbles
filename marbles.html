@@ -6,9 +6,14 @@
   <div>
     {{> giveMenuTemplate}} {{> marbleSize}}
   </div>
-
+  {{> newestMarble}}
 </body>
 
+<template name="newestMarble">
+  <div id="newestMarbleDiv">
+    <img src="{{mostRecent}}">
+  </div>
+</template>
 
 <template name="giveMenuTemplate">
   <span id="giveMenu" class="keeptogether">
@@ -18,7 +23,7 @@
 
 <template name="marbleArchive">
   <div class="oldMarble">
-    <!-- Will set up the class for old marbles -->
+    
   </div>
 </template>
 
@@ -75,3 +80,8 @@
   </ul>
 </template>
 
+<template name="marbleCollection">
+  <div class="marble">
+    <img src="{{mostRecent}}">
+  </div>
+</template>

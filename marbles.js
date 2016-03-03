@@ -8,9 +8,14 @@ if (Meteor.isClient) {
     marbles: function() {
       // Find all the marbles in the database and return
       return Marbles.find();
-      
     }
-    
+  });
+  
+  Template.newestMarble.helpers({
+    mostRecent: function() {
+      // var newestMarble = Marbles.find().limit(1).sort({$natural:-1});
+      return "placeholder.jpg";
+    }
   });
 }
 
