@@ -3,12 +3,75 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <div>
+    {{> giveMenuTemplate}} {{> marbleSize}}
+  </div>
 
-  {{> hello}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+
+<template name="giveMenuTemplate">
+  <span id="giveMenu" class="keeptogether">
+    <a href="#">Give</a> a
+  </span>
 </template>
+
+<template name="marbleArchive">
+  <div class="oldMarble">
+    <!-- Will set up the class for old marbles -->
+  </div>
+</template>
+
+<template name="marbleSize">
+  <span>
+    <ul id="marbleSizeList" class="keeptogether">
+      <li>peewee</li>
+      <li>small</li>
+      <li>shooter</li>
+      <li>giant</li>
+    </ul>
+  </span>
+</template>
+
+<template name="marbleType">
+  <ul id="marbleTypeList">
+    <li>agate</li>
+    <li>alley</li>
+    <li>bennington</li>
+    <li>cat's eye</li>
+    <li>china</li>
+    <li>clearie</li>
+    <li>corkscrew</li>
+    <li>milky</li>
+    <li>steely</li>
+    <li>sulfide</li>
+    <li>swirl</li>
+  </ul>
+</template>
+
+<template name="firstColor">
+  <ul id="firstColorList">
+    <li>blue</li>
+    <li>gray</li>
+    <li>green</li>
+    <li>orange</li>
+    <li>purple</li>
+    <li>red</li>
+    <li>white</li>
+    <li>yellow</li>
+  </ul>
+</template>
+
+<template name="secondColor">
+  <ul id="secondColorList">
+    <li>blue</li>
+    <li>gray</li>
+    <li>green</li>
+    <li>orange</li>
+    <li>purple</li>
+    <li>red</li>
+    <li>white</li>
+    <li>yellow</li>
+  </ul>
+</template>
+

@@ -1,18 +1,16 @@
+// Initiate collection of marbles in Mongo database
+var Marbles = new Mongo.Collection("marbles");
+
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
-
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
+  Template.body.helpers({
+    
+    // The marbles helper returns a list of the marbles
+    marbles: function() {
+      // Find all the marbles in the database and return
+      return Marbles.find();
+      
     }
-  });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
+    
   });
 }
 
@@ -21,3 +19,5 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
+
+

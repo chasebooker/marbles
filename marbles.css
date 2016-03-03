@@ -1,1 +1,60 @@
-/* CSS declarations go here */
+@font-face {
+    font-family: 'rundpunkt';
+    src: url('fonts/rundpunkt_bold-webfont.eot');
+    src: url('fonts/rundpunkt_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rundpunkt_bold-webfont.woff2') format('woff2'),
+         url('fonts/rundpunkt_bold-webfont.woff') format('woff'),
+         url('fonts/rundpunkt_bold-webfont.ttf') format('truetype'),
+         url('fonts/rundpunkt_bold-webfont.svg#rundpunktbold') format('svg');
+}
+
+body {
+    font-family: "Rundpunkt", Arial, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 4px solid white;
+    padding-bottom: 1px;
+}
+
+#giveMenu {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+ul {
+    position: relative;
+    list-style-type: none;
+}
+
+#columns {
+    column-count: 5;
+}
+
+.keeptogether {
+    -webkit-column-break-after: always;
+    break-after: column;
+}
+
+span {
+    display: block;
+}
+
+#giveMenu {
+    width: 200px;
+}
+
+#newestMarbleDiv {
+    position: fixed;
+    top: 50%; right: 50%;
+    transform: translate(-50%, -50%);
+}
