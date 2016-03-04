@@ -13,7 +13,8 @@ if (Meteor.isClient) {
   
   Template.newestMarble.helpers({
     mostRecent: function() {
-      // var newestMarble = Marbles.find().limit(1).sort({$natural:-1});
+      var newestMarble = Marbles.find().limit(1);
+      console.log(newestMarble);
       return "placeholder.jpg";
     }
   });
